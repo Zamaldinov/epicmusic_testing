@@ -29,11 +29,11 @@ class Login_page(Base):
             EC.element_to_be_clickable((By.XPATH, self.button_profile)))
 
     def get_login(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 40).until(
             EC.element_to_be_clickable((By.XPATH, self.login)))
 
     def get_password(self):
-        return WebDriverWait(self.driver, 30).until(
+        return WebDriverWait(self.driver, 40).until(
             EC.element_to_be_clickable((By.XPATH, self.password)))
 
     def get_button_submit_login(self):
@@ -46,6 +46,7 @@ class Login_page(Base):
         print('Click button profile')
 
     def input_login(self, login):
+        print(login)
         self.get_login().send_keys(login)
         print('Input login')
 
