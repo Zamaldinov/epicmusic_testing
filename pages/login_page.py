@@ -6,10 +6,12 @@ import os
 from dotenv import load_dotenv
 
 
+load_dotenv()
+
+
 class Login_page(Base):
 
     url = 'https://epimusic.ru/'
-    load_dotenv()
     login_env = os.getenv('LOGIN')
     password_env = os.getenv('PASSWORD')
 
