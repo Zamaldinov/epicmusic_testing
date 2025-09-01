@@ -27,3 +27,4 @@ def test_buy_product():
     bg.buy_guitars()
     cp = Cart_page(driver)
     cp.buy_cart()
+    print('Successful testing')

@@ -48,7 +48,6 @@ class Login_page(Base):
         print('Click button profile')
 
     def input_login(self, login):
-        print(login)
         self.get_login().send_keys(login)
         print('Input login')
 
